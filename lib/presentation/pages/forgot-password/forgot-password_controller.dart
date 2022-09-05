@@ -1,8 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'package:sajilo_dokan/domain/repository/api_repository.dart';
 import 'package:sajilo_dokan/domain/repository/local_repository.dart';
 
@@ -45,7 +43,7 @@ class ForgotPasswordController extends GetxController {
       var result = await apiRepositoryInterface!.forgetPassword(email);
       if (result == true) {
         startTimer();
-        Get.snackbar('Validation OTP', 'Successfuly send');
+        Get.snackbar('Validation OTP', 'Successfully send');
       } else {
         startTimer();
         Get.snackbar('Validation OTP', 'OTP send failed');

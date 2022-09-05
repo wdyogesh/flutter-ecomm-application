@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 class Otp extends StatefulWidget {
@@ -22,7 +21,6 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
   // Constants
   final int time = 30;
   AnimationController? _controller;
-
   // Variables
   late Size _screenSize;
   int? _currentDigit;
@@ -45,7 +43,9 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
       backgroundColor: Colors.transparent,
       elevation: 0.0,
       leading: new InkWell(
-        borderRadius: BorderRadius.circular(30.0),
+        borderRadius: BorderRadius.circular(
+          30.0,
+        ),
         child: new Icon(
           Icons.arrow_back,
           color: Colors.black54,
@@ -64,7 +64,10 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
       "Verification Code",
       textAlign: TextAlign.center,
       style: new TextStyle(
-          fontSize: 28.0, color: Colors.black, fontWeight: FontWeight.bold),
+        fontSize: 28.0,
+        color: Colors.black,
+        fontWeight: FontWeight.bold,
+      ),
     );
   }
 
@@ -74,7 +77,10 @@ class _OtpState extends State<Otp> with SingleTickerProviderStateMixin {
       "Please enter the OTP sent\non your registered Email ID.",
       textAlign: TextAlign.center,
       style: new TextStyle(
-          fontSize: 18.0, color: Colors.black, fontWeight: FontWeight.w600),
+        fontSize: 18.0,
+        color: Colors.black,
+        fontWeight: FontWeight.w600,
+      ),
     );
   }
 

@@ -13,8 +13,8 @@ class SajiloDokanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: SajiloTheme.of(context),
+      debugShowCheckedModeBanner: true,
+      theme: WdYogeshTheme.of(context),
       initialRoute: SajiloDokanRoutes.splash,
       getPages: SajiloDokanPages.pages,
       initialBinding: MainBinding(),

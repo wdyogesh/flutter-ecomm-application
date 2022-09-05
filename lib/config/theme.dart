@@ -43,11 +43,10 @@ class CustomTextStyle {
       textStyle: TextStyle(fontSize: 24, fontWeight: FontWeight.bold));
 }
 
-class SajiloTheme {
+class WdYogeshTheme {
   static ThemeData of(context) {
     return ThemeData(
         primaryColorLight: AppColors.lightGray,
-      
         primarySwatch: Colors.red,
         bottomAppBarColor: AppColors.lightGray,
         backgroundColor: AppColors.background,
@@ -55,10 +54,10 @@ class SajiloTheme {
         errorColor: AppColors.red,
         dividerColor: Colors.transparent,
         appBarTheme: AppBarTheme(
-            color: Colors.white,
-            titleTextStyle: TextStyle(color: Colors.black),
-            iconTheme: IconThemeData(color: AppColors.black),
-         ));
+          color: Colors.white,
+          titleTextStyle: TextStyle(color: Colors.black),
+          iconTheme: IconThemeData(color: AppColors.black),
+        ));
   }
 }
 
