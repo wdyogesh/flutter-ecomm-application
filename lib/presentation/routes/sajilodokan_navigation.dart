@@ -40,7 +40,7 @@ class SajiloDokanPages {
         name: SajiloDokanRoutes.splash,
         page: () => SplashScreen(),
         binding:
-            SplashBinding()), //  yasle garda suru maa Yo controller  initiaze hunxa
+            SplashBinding()), //  This controller will take the latest code
     GetPage(name: SajiloDokanRoutes.home, page: () => Home()),
     GetPage(
         name: SajiloDokanRoutes.login,
